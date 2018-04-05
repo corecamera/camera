@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigator.msGetUserMedia);
 
 
-
+var constraints = "";
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var constraints = window.constraints = {
       audio: false,
