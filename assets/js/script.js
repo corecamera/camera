@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navigator.mozGetUserMedia ||
     navigator.msGetUserMedia);
 
-
-var constraints = "";
+navigator.getMedia ( {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var constraints = window.constraints = {
       audio: false,
@@ -31,7 +30,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       audio: false,
       video: true,
     };
-}
+}) };
 
    
 
